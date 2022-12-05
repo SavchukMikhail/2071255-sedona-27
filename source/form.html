@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
+
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
@@ -29,44 +30,96 @@
     </div>
     <div class="form-wrapper__intro intro">
       <h2 class="intro__title">Оставьте свой отзыв</h2>
-      <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </div>
     <form class="user-info-form" method="post" action="#" name="user-service-review">
-      <section class="user-name-form">
+      <section class="user-info-form__user-name">
         <h2 class="user-info-form__title">Представьтесь:</h2>
-        <ul class="user-name-form__list">
-          <li class="user-name-form__item">
-            <label class="user-name-form__title" for="user-first-name-form">ИМЯ*:</h3>
-            <input class="user-name-form__data" type="text" id="user-first-name-form" name="user-first-name" placeholder="Имя" required>
-          </li>
-          <li class="user-name-form__item">
-            <label class="user-name-form__title" for="user-second-name-form">Фамилия*:</h3>
-              <input class="user-name-form__data" type="text" id="user-second-name-form" name="user-second-name" placeholder="Фамилия" required>
-          </li>
-          <li class="user-name-form__item">
-            <label class="user-name-form__title" for="user-patronymic-name-form">Отчество*:</h3>
-              <input class="user-name-form__data" type="text" id="user-patronymic-name-form" name="user-patronymic-name" placeholder="Отчество" required>
-          </li>
-        </ul>
+        <label class="user-info-form__title">
+          ИМЯ*:
+          <input class="user-info-form__data" type="text" name="user-first-name" placeholder="Имя" required></label>
+        <label class="user-info-form__title">
+          Фамилия*:
+          <input class="user-info-form__data" type="text" name="user-second-name" placeholder="Фамилия" required>
+        </label>
+        <label class="user-info-form__title">
+          Отчество:
+          <input class="user-info-form__data" type="text" name="user-patronymic-name" placeholder="Отчество">
+        </label>
       </section>
-      <section class="user-contacts-form">
-        <h2 class="user-info-form__title">Представьтесь:</h2>
-        <ul class="user-info-form__list">
-          <li class="user-info-form__item">
-            <label class="user-contacts-form__title" for="user-first-name-form">ИМЯ*:</h3>
-            <input class="user-contacts-form__data" type="text" id="user-first-name-form" name="user-first-name" placeholder="Имя" required>
-          </li>
-          <li class="user-info-form__item">
-            <label class="user-contacts-form__title" for="user-second-name-form">Фамилия*:</h3>
-              <input class="user-contacts-form__data" type="text" id="user-second-name-form" name="user-second-name" placeholder="Фамилия" required>
-          </li>
-          <li class="user-info-form__item">
-            <label class="user-contacts-form__title" for="user-patronymic-name-form">Отчество*:</h3>
-              <input class="user-contacts-form__data" type="text" id="user-patronymic-name-form" name="user-patronymic-name" placeholder="Отчество" required>
-          </li>
-        </ul>
+      <section class="user-info-form__user-contacts">
+        <h2 class="user-info-form__title">Контактная информация:</h2>
+        <label class="user-info-form__title">
+          Контактный телефон*:
+          <input class="user-info-form__data" type="tel" name="user-telephone" placeholder="Введите телефон" required>
+        </label>
+        <label class="user-info-form__title">
+          Электронная почта*:
+          <input class="user-info-form__data" type="email" name="user-email" placeholder="Введите e-mail" required>
+        </label>
       </section>
-
+      <fieldset class="user-info-form__interview interview">
+        <legend class="user-info-form__title">Ваше общее впечатление:</legend>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer radio-answer" type="radio" id="rather-positive" name="user-general-impression"
+            checked>
+          <label class="answer__title" for="rather-positive">Скорее положительное</label>
+        </div>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer radio-answer" type="radio" id="rather-negative"
+            name="user-general-impression">
+          <label class="answer__title" for="rather-negative">Скорее отрицительное</label>
+        </div>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer radio-answer" type="radio" id="no-answer" name="user-general-impression">
+          <label class="answer__title" for="no-answer">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+      <fieldset class="user-info-form__interview interview">
+        <legend class="user-info-form__title">Ваше общее впечатление:</legend>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer checkbox-answer" type="checkbox" id="devil-bridge" name="devil-bridge"
+            checked>
+          <label class="answer__title" for="devil-bridge">Мост дьявола</label>
+        </div>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer checkbox-answer" type="checkbox" id="bell-mountain" name="bell-mountain"
+            checked>
+          <label class="answer__title" for="bell-mountain">Гора колокол</label>
+        </div>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer checkbox-answer" type="checkbox" id="slide-park" name="clide-park" checked>
+          <label class="answer__title" for="bell-mountain">Слайд-парк</label>
+        </div>
+        <div class="interview__question-wrapper">
+          <input class="interview__answer checkbox-answer" type="checkbox" id="red-rocks" name="red-rocks">
+          <label class="answer__title" for="red-rocks">Слайд-парк</label>
+        </div>
+      </fieldset>
+      <section class="user-info-form__user-review">
+        <h2 class="user-info-form__title">Опишите свои эмоции:</h2>
+        <textarea class="user-rewiew__text" name="user-review" placeholder="Опишите подробно все свои восторги "
+          rows="5">
+          </textarea>
+      </section>
+      <button class="button--primary" type="submit">Отправить отзыв</button>
+      <p class="user-info-form__required-text">* — обязательные поля</p>
     </form>
   </main>
+  <footer class="main-footer">
+    <p class="main-footer__hashtag">#visitSEDONA</p>
+    <div class="main-footer__social social">
+      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+      <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+        <img class="copyright__icon">
+      </a>
+    </div>
+  </footer>
 </body>
